@@ -30,3 +30,15 @@ class TestTokenizer(TestCase):
     def test_tokenize_awesome_case_2(self):
         tokens = self._tokenizer.tokenize(".?[ab]+a")
         self.assertSequenceEqual(tokens, ['.?', '[ab]+', 'a'])
+
+    def test_tokenize_awesome_case_3(self):
+        tokens = self._tokenizer.tokenize(".?[ab]a")
+        self.assertSequenceEqual(tokens, ['.?', '[ab]', 'a'])
+
+    def test_tokenize_awesome_case_4(self):
+        tokens = self._tokenizer.tokenize(".?[ab]a")
+        self.assertSequenceEqual(tokens, ['.?', '[ab]', 'a'])
+
+    def test_tokenize_awesome_case_5(self):
+        tokens = self._tokenizer.tokenize(".?(ab)[AB]a")
+        self.assertSequenceEqual(tokens, ['.?', '(ab)', '[AB]', 'a'])
