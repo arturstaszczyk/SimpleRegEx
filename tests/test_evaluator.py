@@ -4,8 +4,6 @@ from evaluator import Evaluator
 
 class TestEvaluator(TestCase):
 
-    _evaluator = None
-
     def setUp(self):
         self._evaluator = Evaluator()
 
@@ -40,6 +38,13 @@ class TestEvaluator(TestCase):
     def test_evaluate_advanced_tokens_modifier2(self):
         tokens = ['(ab)+']
         expected = [{'token': 'ab', 'modifier': '+', 'condition': 'match'}]
+
+        output = evaluation = self._evaluator.evaluate(tokens)
+        self.assertSequenceEqual(output, expected)
+
+    def test_evaluate_advanced_tokens_modifier3(self):
+        tokens = ['(ab)']
+        expected = [{'token': 'ab', 'modifier': None, 'condition': 'match'}]
 
         output = evaluation = self._evaluator.evaluate(tokens)
         self.assertSequenceEqual(output, expected)

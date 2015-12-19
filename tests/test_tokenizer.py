@@ -1,9 +1,8 @@
 from unittest import TestCase
 from tokenizer import Tokenizer
 
-class TestTokenizer(TestCase):
 
-    _tokenizer = None
+class TestTokenizer(TestCase):
 
     def setUp(self):
         self._tokenizer = Tokenizer()

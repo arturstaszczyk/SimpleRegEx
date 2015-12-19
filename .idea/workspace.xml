@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="225cb60a-2d23-4361-ac0e-2ab359b2cfe1" name="Default" comment="" />
+    <list default="true" id="225cb60a-2d23-4361-ac0e-2ab359b2cfe1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator.py" afterPath="$PROJECT_DIR$/evaluator.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_evaluator.py" afterPath="$PROJECT_DIR$/tests/test_evaluator.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_tokenizer.py" afterPath="$PROJECT_DIR$/tests/test_tokenizer.py" />
+    </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,9 +26,9 @@
     <favorites_list name="untitled" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="tokenizer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/PycharmProjects/RegEx/tokenizer.py">
+        <entry file="file://$PROJECT_DIR$/tokenizer.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="22" column="35" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="35" />
@@ -32,10 +38,10 @@
         </entry>
       </file>
       <file leaf-file-name="test_tokenizer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/PycharmProjects/RegEx/tests/test_tokenizer.py">
+        <entry file="file://$PROJECT_DIR$/tests/test_tokenizer.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -43,21 +49,57 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="evaluator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/PycharmProjects/RegEx/evaluator.py">
+      <file leaf-file-name="matcher.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/matcher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state vertical-scroll-proportion="-14.888889">
+              <caret line="83" column="59" selection-start-line="83" selection-start-column="59" selection-end-line="83" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_evaluator.py" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/PycharmProjects/RegEx/tests/test_evaluator.py">
+      <file leaf-file-name="test_matcher.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/test_matcher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13422818">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.5532787">
+              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+                <element signature="e#2584#3109#0" expanded="false" />
+                <element signature="e#3774#4139#0" expanded="false" />
+                <element signature="e#4186#4525#0" expanded="false" />
+                <element signature="e#4571#4936#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="case.py" pinned="false" current-in-tab="false">
+        <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="507" column="0" selection-start-line="507" selection-start-column="0" selection-end-line="507" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evaluator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="28" column="109" selection-start-line="28" selection-start-column="109" selection-end-line="28" selection-end-column="109" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_evaluator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/test_evaluator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -66,7 +108,7 @@
         </entry>
       </file>
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/PycharmProjects/RegEx/main.py">
+        <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
@@ -84,24 +126,30 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/PycharmProjects/untitled/test_tokenizer.py" />
-        <option value="$USER_HOME$/PycharmProjects/untitled/main.py" />
-        <option value="$USER_HOME$/PycharmProjects/untitled/tokenizer.py" />
-        <option value="$USER_HOME$/PycharmProjects/untitled/tests/test_tokenizer.py" />
-        <option value="$USER_HOME$/PycharmProjects/RegEx/test_evaluator.py" />
-        <option value="$USER_HOME$/PycharmProjects/RegEx/tests/test_tokenizer.py" />
-        <option value="$USER_HOME$/PycharmProjects/RegEx/evaluator.py" />
-        <option value="$USER_HOME$/PycharmProjects/RegEx/tests/test_evaluator.py" />
+        <option value="$PROJECT_DIR$/../untitled/test_tokenizer.py" />
+        <option value="$PROJECT_DIR$/../untitled/main.py" />
+        <option value="$PROJECT_DIR$/../untitled/tokenizer.py" />
+        <option value="$PROJECT_DIR$/../untitled/tests/test_tokenizer.py" />
+        <option value="$PROJECT_DIR$/test_evaluator.py" />
+        <option value="$PROJECT_DIR$/tests/test_evaluator.py" />
+        <option value="$PROJECT_DIR$/test_matcher.py" />
+        <option value="$PROJECT_DIR$/evaluator.py" />
+        <option value="$PROJECT_DIR$/tests/test_tokenizer.py" />
+        <option value="$PROJECT_DIR$/tests/test_matcher.py" />
+        <option value="$PROJECT_DIR$/matcher.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1225" />
-    <option name="height" value="777" />
+    <option name="width" value="1530" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -135,6 +183,12 @@
               <option name="myItemId" value="RegEx" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RegEx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="RegEx" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -161,29 +215,29 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/untitled/main.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled/main.py" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$USER_HOME$/PycharmProjects/RegEx/tests" />
-      <recent name="$USER_HOME$/PycharmProjects/untitled/tests" />
+      <recent name="$PROJECT_DIR$/tests" />
+      <recent name="$PROJECT_DIR$/../untitled/tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Nosetests in TestEvaluator">
-    <configuration default="false" name="Nosetests in TestEvaluator" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Nosetests in TestMatcher">
+    <configuration default="false" name="Nosetests in TestMatcher" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PycharmProjects/RegEx/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="RegEx" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/PycharmProjects/RegEx/tests/test_evaluator.py" />
-      <option name="CLASS_NAME" value="TestEvaluator" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_matcher.py" />
+      <option name="CLASS_NAME" value="TestMatcher" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_CLASS" />
@@ -193,19 +247,19 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Nosetest TestEvaluator.test_evaluate (1)" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Nosetest TestMatcher.test_match_multiple" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PycharmProjects/RegEx/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="RegEx" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/PycharmProjects/RegEx/tests/test_evaluator.py" />
-      <option name="CLASS_NAME" value="TestEvaluator" />
-      <option name="METHOD_NAME" value="test_evaluate" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_matcher.py" />
+      <option name="CLASS_NAME" value="TestMatcher" />
+      <option name="METHOD_NAME" value="test_match_multiple" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
@@ -214,19 +268,19 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Nosetest TestEvaluator.test_evaluate (2)" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Nosetest TestMatcher.test_match_at_least_one" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PycharmProjects/RegEx/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="RegEx" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/PycharmProjects/RegEx/tests/test_evaluator.py" />
-      <option name="CLASS_NAME" value="TestEvaluator" />
-      <option name="METHOD_NAME" value="test_evaluate" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_matcher.py" />
+      <option name="CLASS_NAME" value="TestMatcher" />
+      <option name="METHOD_NAME" value="test_match_at_least_one" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
@@ -235,19 +289,19 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Nosetest TestEvaluator.test_evaluate_simple_tokens" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Nosetest TestMatcher.test_match_one_or_zero" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PycharmProjects/RegEx/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="RegEx" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/PycharmProjects/RegEx/tests/test_evaluator.py" />
-      <option name="CLASS_NAME" value="TestEvaluator" />
-      <option name="METHOD_NAME" value="test_evaluate_simple_tokens" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_matcher.py" />
+      <option name="CLASS_NAME" value="TestMatcher" />
+      <option name="METHOD_NAME" value="test_match_one_or_zero" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
@@ -256,19 +310,19 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Nosetest TestEvaluator.test_evaluate_simple_tokens_modifier2" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Nosetest TestMatcher.test_any_multiple" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PycharmProjects/RegEx/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="RegEx" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/PycharmProjects/RegEx/tests/test_evaluator.py" />
-      <option name="CLASS_NAME" value="TestEvaluator" />
-      <option name="METHOD_NAME" value="test_evaluate_simple_tokens_modifier2" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_matcher.py" />
+      <option name="CLASS_NAME" value="TestMatcher" />
+      <option name="METHOD_NAME" value="test_any_multiple" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
@@ -406,31 +460,31 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="/usr/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PycharmProjects/untitled" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../untitled" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="untitled" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/PycharmProjects/untitled/tokenizer.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../untitled/tokenizer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.RegEx" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetests in TestEvaluator" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetest TestEvaluator.test_evaluate (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetest TestEvaluator.test_evaluate (2)" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetest TestEvaluator.test_evaluate_simple_tokens" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Nosetest TestEvaluator.test_evaluate_simple_tokens_modifier2" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetests in TestMatcher" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_match_multiple" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_match_at_least_one" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_match_one_or_zero" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_any_multiple" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in TestEvaluator" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetest TestEvaluator.test_evaluate_simple_tokens_modifier2" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetest TestEvaluator.test_evaluate_simple_tokens" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetest TestEvaluator.test_evaluate (2)" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetest TestEvaluator.test_evaluate (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in TestMatcher" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_any_multiple" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_match_one_or_zero" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_match_at_least_one" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_match_multiple" />
       </list>
     </recent_temporary>
   </component>
@@ -448,69 +502,83 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nosetest_TestEvaluator_test_evaluate_simple_tokens - 2015.12.15 at 21h 27m 43s.xml">
-      <configuration name="Nosetest TestEvaluator.test_evaluate_simple_tokens" configurationId="tests" />
+    <history-entry file="Nosetest_TestMatcher_test_any_multiple - 2015.12.19 at 22h 08m 01s.xml">
+      <configuration name="Nosetest TestMatcher.test_any_multiple" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetest_TestEvaluator_test_evaluate_simple_tokens_modifier2 - 2015.12.15 at 21h 28m 13s.xml">
-      <configuration name="Nosetest TestEvaluator.test_evaluate_simple_tokens_modifier2" configurationId="tests" />
+    <history-entry file="Nosetest_TestMatcher_test_match_one_or_zero - 2015.12.19 at 21h 58m 11s.xml">
+      <configuration name="Nosetest TestMatcher.test_match_one_or_zero" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetest_TestEvaluator_test_evaluate_simple_tokens_modifier2 - 2015.12.15 at 21h 28m 21s.xml">
-      <configuration name="Nosetest TestEvaluator.test_evaluate_simple_tokens_modifier2" configurationId="tests" />
+    <history-entry file="Nosetest_TestMatcher_test_match_one_or_zero - 2015.12.19 at 21h 59m 48s.xml">
+      <configuration name="Nosetest TestMatcher.test_match_one_or_zero" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_TestEvaluator - 2015.12.15 at 21h 27m 25s.xml">
-      <configuration name="Nosetests in TestEvaluator" configurationId="tests" />
+    <history-entry file="Nosetests_in_TestMatcher - 2015.12.19 at 21h 55m 31s.xml">
+      <configuration name="Nosetests in TestMatcher" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_TestEvaluator - 2015.12.15 at 21h 27m 31s.xml">
-      <configuration name="Nosetests in TestEvaluator" configurationId="tests" />
+    <history-entry file="Nosetests_in_TestMatcher - 2015.12.19 at 22h 04m 11s.xml">
+      <configuration name="Nosetests in TestMatcher" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_TestEvaluator - 2015.12.15 at 21h 27m 57s.xml">
-      <configuration name="Nosetests in TestEvaluator" configurationId="tests" />
+    <history-entry file="Nosetests_in_TestMatcher - 2015.12.19 at 22h 13m 37s.xml">
+      <configuration name="Nosetests in TestMatcher" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_TestEvaluator - 2015.12.15 at 21h 43m 13s.xml">
-      <configuration name="Nosetests in TestEvaluator" configurationId="tests" />
+    <history-entry file="Nosetests_in_TestMatcher - 2015.12.19 at 22h 14m 52s.xml">
+      <configuration name="Nosetests in TestMatcher" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_TestEvaluator - 2015.12.15 at 21h 45m 29s.xml">
-      <configuration name="Nosetests in TestEvaluator" configurationId="tests" />
+    <history-entry file="Nosetests_in_TestMatcher - 2015.12.19 at 22h 16m 39s.xml">
+      <configuration name="Nosetests in TestMatcher" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_TestEvaluator - 2015.12.15 at 21h 48m 40s.xml">
-      <configuration name="Nosetests in TestEvaluator" configurationId="tests" />
+    <history-entry file="Nosetests_in_TestMatcher - 2015.12.19 at 22h 18m 17s.xml">
+      <configuration name="Nosetests in TestMatcher" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_TestEvaluator - 2015.12.15 at 21h 49m 17s.xml">
-      <configuration name="Nosetests in TestEvaluator" configurationId="tests" />
+    <history-entry file="Nosetests_in_TestMatcher - 2015.12.19 at 22h 19m 09s.xml">
+      <configuration name="Nosetests in TestMatcher" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1225" height="777" extended-state="6" />
+    <frame x="0" y="23" width="1530" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24979591" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3279703" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39975247" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="tests">
+        <watch expression="text[0:token_len]" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/PycharmProjects/RegEx/tokenizer.py">
+    <entry file="file://$PROJECT_DIR$/tokenizer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="35" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="35" />
@@ -518,7 +586,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/RegEx/main.py">
+    <entry file="file://$PROJECT_DIR$/tests/test_tokenizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matcher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_matcher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#2584#3109#0" expanded="false" />
+            <element signature="e#3774#4139#0" expanded="false" />
+            <element signature="e#4186#4525#0" expanded="false" />
+            <element signature="e#4571#4936#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_evaluator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
@@ -526,30 +644,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/RegEx/tests/test_tokenizer.py">
+    <entry file="file://$PROJECT_DIR$/tokenizer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_tokenizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/RegEx/evaluator.py">
+    <entry file="file://$PROJECT_DIR$/matcher.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/RegEx/tests/test_evaluator.py">
+    <entry file="file://$PROJECT_DIR$/tests/test_matcher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13422818">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#2584#3109#0" expanded="false" />
+            <element signature="e#3774#4139#0" expanded="false" />
+            <element signature="e#4186#4525#0" expanded="false" />
+            <element signature="e#4571#4936#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tokenizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="109" selection-start-line="28" selection-start-column="109" selection-end-line="28" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_evaluator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="507" column="0" selection-start-line="507" selection-start-column="0" selection-end-line="507" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_tokenizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matcher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.888889">
+          <caret line="83" column="59" selection-start-line="83" selection-start-column="59" selection-end-line="83" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_matcher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5532787">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#2584#3109#0" expanded="false" />
+            <element signature="e#3774#4139#0" expanded="false" />
+            <element signature="e#4186#4525#0" expanded="false" />
+            <element signature="e#4571#4936#0" expanded="false" />
           </folding>
         </state>
       </provider>
