@@ -22,39 +22,31 @@ class Matcher:
                 cnt = cnt + 1
                 text = text[token_len:]
 
-            if modifier == '*':
-                return {Matcher.MATCH_LENGTH: cnt * token_len}
-            elif modifier == '?':
-                return {Matcher.MATCH_LENGTH: min(cnt, 1) * token_len}
-            elif modifier == '+':
-                return {Matcher.MATCH_LENGTH: cnt * token_len} if cnt > 0 else None
-            else:
-                return {Matcher.MATCH_LENGTH: min(cnt, 1) * token_len} if cnt > 0 else None
+            result = self._modify_result_by_modifier(cnt, modifier)
+            return {Matcher.MATCH_LENGTH: result * token_len} if result != None else None
 
         elif condition == Evaluator.EVAL_CONDITION_ANY:
             cnt = 0
             while cnt < len(text) and text[cnt] in token:
                 cnt = cnt + 1
 
-            if modifier == '*':
-                return {Matcher.MATCH_LENGTH: cnt}
-            elif modifier == '?':
-                return {Matcher.MATCH_LENGTH: min(cnt, 1)}
-            elif modifier == '+':
-                return {Matcher.MATCH_LENGTH: cnt} if cnt > 0 else None
-            else:
-                return {Matcher.MATCH_LENGTH: min(cnt, 1)} if cnt > 0 else None
+            result = self._modify_result_by_modifier(cnt, modifier)
+            return {Matcher.MATCH_LENGTH: result} if result != None else None
 
         else:
             cnt = 0
             while cnt < len(text) and text[cnt] == token[0]:
                 cnt = cnt + 1
 
-            if modifier == '*':
-                return {Matcher.MATCH_LENGTH: cnt}
-            elif modifier == '?':
-                return {Matcher.MATCH_LENGTH: min(cnt, 1)}
-            elif modifier == '+':
-                return {Matcher.MATCH_LENGTH: cnt} if cnt > 0 else None
-            else:
-                return {Matcher.MATCH_LENGTH: min(cnt, 1)} if cnt > 0 else None
+            result = self._modify_result_by_modifier(cnt, modifier)
+            return {Matcher.MATCH_LENGTH: result} if result != None else None
+
+    def _modify_result_by_modifier(self, result, modifier):
+        if modifier == '*':
+            return result
+        elif modifier == '?':
+            return min(result, 1)
+        elif modifier == '+':
+            return result if result > 0 else None
+        else:
+            return min(result, 1) if result > 0 else None

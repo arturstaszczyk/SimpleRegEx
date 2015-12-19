@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="225cb60a-2d23-4361-ac0e-2ab359b2cfe1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/matcher.py" afterPath="$PROJECT_DIR$/matcher.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_matcher.py" afterPath="$PROJECT_DIR$/tests/test_matcher.py" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,21 +45,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="matcher.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="matcher.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/matcher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47572815">
-              <caret line="45" column="79" selection-start-line="45" selection-start-column="79" selection-end-line="45" selection-end-column="79" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_matcher.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test_matcher.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/test_matcher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.4074074">
-              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.24590164">
+              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
                 <element signature="e#453#772#0" expanded="false" />
@@ -510,9 +509,6 @@
     <history-entry file="Nosetest_TestMatcher_test_no_condition - 2015.12.19 at 22h 37m 11s.xml">
       <configuration name="Nosetest TestMatcher.test_no_condition" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_TestMatcher - 2015.12.19 at 22h 32m 41s.xml">
-      <configuration name="Nosetests in TestMatcher" configurationId="tests" />
-    </history-entry>
     <history-entry file="Nosetests_in_TestMatcher - 2015.12.19 at 22h 33m 06s.xml">
       <configuration name="Nosetests in TestMatcher" configurationId="tests" />
     </history-entry>
@@ -534,6 +530,9 @@
     <history-entry file="Nosetests_in_TestMatcher - 2015.12.19 at 22h 58m 50s.xml">
       <configuration name="Nosetests in TestMatcher" configurationId="tests" />
     </history-entry>
+    <history-entry file="Nosetests_in_TestMatcher - 2015.12.19 at 23h 07m 25s.xml">
+      <configuration name="Nosetests in TestMatcher" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1530" height="877" extended-state="6" />
@@ -544,7 +543,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3279703" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3279703" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -748,10 +747,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/matcher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_matcher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4074074">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.24590164">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
             <element signature="e#453#772#0" expanded="false" />
@@ -764,14 +771,6 @@
             <element signature="e#4336#4701#0" expanded="false" />
             <element signature="e#4748#5087#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/matcher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47572815">
-          <caret line="45" column="79" selection-start-line="45" selection-start-column="79" selection-end-line="45" selection-end-column="79" />
-          <folding />
         </state>
       </provider>
     </entry>
