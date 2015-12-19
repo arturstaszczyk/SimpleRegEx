@@ -15,75 +15,46 @@ class Matcher:
         condition = self._token_eval[Evaluator.EVAL_CONDITION]
         modifier = self._token_eval[Evaluator.EVAL_MODIFIER]
 
-        if modifier == None:
-            if condition == None:
-                if text[0] == self._current_char:
-                    return {Matcher.MATCH_LENGTH: 1}
+        if condition == Evaluator.EVAL_CONDITION_MATCH:
+            cnt = 0
+            token_len = len(token)
+            while token_len <= len(text) and token == text[0:token_len]:
+                cnt = cnt + 1
+                text = text[token_len:]
 
-            if condition == Evaluator.EVAL_CONDITION_ANY:
-                if text[0] in token:
-                    return {Matcher.MATCH_LENGTH: 1}
-
-
-        elif modifier == '*':
-            if condition == None:
-                cnt = 0;
-                while cnt < len(text) and text[cnt] == self._current_char:
-                    cnt = cnt + 1
-
-                return {Matcher.MATCH_LENGTH: cnt}
-
-            elif condition == Evaluator.EVAL_CONDITION_MATCH:
-                cnt = 0
-                token_len = len(token)
-                while token_len <= len(text) and token == text[0:token_len]:
-                    cnt = cnt + 1
-                    text = text[token_len:]
-
-                return {Matcher.MATCH_LENGTH: cnt*token_len}
+            if modifier == '*':
+                return {Matcher.MATCH_LENGTH: cnt * token_len}
+            elif modifier == '?':
+                return {Matcher.MATCH_LENGTH: min(cnt, 1) * token_len}
+            elif modifier == '+':
+                return {Matcher.MATCH_LENGTH: cnt * token_len} if cnt > 0 else None
             else:
-                cnt = 0
-                while cnt < len(text) and text[cnt] in token:
-                    cnt = cnt + 1
+                raise Exception('Invalid regex - used "()" agregation without modificator')
 
+        elif condition == Evaluator.EVAL_CONDITION_ANY:
+            cnt = 0
+            while cnt < len(text) and text[cnt] in token:
+                cnt = cnt + 1
+
+            if modifier == '*':
                 return {Matcher.MATCH_LENGTH: cnt}
-
-        elif modifier == '+':
-            if condition == None:
-                cnt = 0
-                while cnt < len(text) and text[cnt] == token[0]:
-                    cnt = cnt + 1
-
+            elif modifier == '?':
+                return {Matcher.MATCH_LENGTH: min(cnt, 1)}
+            elif modifier == '+':
                 return {Matcher.MATCH_LENGTH: cnt} if cnt > 0 else None
-
-            elif condition == Evaluator.EVAL_CONDITION_MATCH:
-                cnt = 0
-                token_len = len(token)
-                while token_len <= len(text) and token == text[0:token_len]:
-                    cnt = cnt + 1
-                    text = text[token_len:]
-
-                return {Matcher.MATCH_LENGTH: cnt*token_len} if cnt > 0 else None
             else:
-                cnt = 0
-                while cnt < len(text) and text[cnt] in token:
-                    cnt = cnt + 1
+                raise Exception('Invalid regex - used "[]" agregation without modificator')
 
+        else:
+            cnt = 0
+            while cnt < len(text) and text[cnt] == token[0]:
+                cnt = cnt + 1
+
+            if modifier == '*':
+                return {Matcher.MATCH_LENGTH: cnt}
+            elif modifier == '?':
+                return {Matcher.MATCH_LENGTH: min(cnt, 1)}
+            elif modifier == '+':
                 return {Matcher.MATCH_LENGTH: cnt} if cnt > 0 else None
-
-        elif modifier == '?':
-            if condition == Evaluator.EVAL_CONDITION_ANY:
-                if text[0] in token:
-                    return {Matcher.MATCH_LENGTH: 1}
-                else:
-                    return {Matcher.MATCH_LENGTH: 0}
-
-            elif condition in [Evaluator.EVAL_CONDITION_MATCH, None]:
-                token_len = len(token)
-                if token_len <= len(text) and token == text[0:token_len]:
-                    return {Matcher.MATCH_LENGTH: token_len}
-
-                return {Matcher.MATCH_LENGTH: 0}
-
-
-        return None
+            else:
+                return {Matcher.MATCH_LENGTH: min(cnt, 1)} if cnt > 0 else None

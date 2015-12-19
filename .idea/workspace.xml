@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="225cb60a-2d23-4361-ac0e-2ab359b2cfe1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator.py" afterPath="$PROJECT_DIR$/evaluator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_evaluator.py" afterPath="$PROJECT_DIR$/tests/test_evaluator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_tokenizer.py" afterPath="$PROJECT_DIR$/tests/test_tokenizer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/matcher.py" afterPath="$PROJECT_DIR$/matcher.py" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,8 +48,8 @@
       <file leaf-file-name="matcher.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/matcher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.888889">
-              <caret line="83" column="59" selection-start-line="83" selection-start-column="59" selection-end-line="83" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -62,8 +58,8 @@
       <file leaf-file-name="test_matcher.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/test_matcher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5532787">
-              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.27663934">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
                 <element signature="e#2584#3109#0" expanded="false" />
@@ -247,27 +243,6 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Nosetest TestMatcher.test_match_multiple" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="RegEx" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_matcher.py" />
-      <option name="CLASS_NAME" value="TestMatcher" />
-      <option name="METHOD_NAME" value="test_match_multiple" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="Nosetest TestMatcher.test_match_at_least_one" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -323,6 +298,27 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_matcher.py" />
       <option name="CLASS_NAME" value="TestMatcher" />
       <option name="METHOD_NAME" value="test_any_multiple" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Nosetest TestMatcher.test_no_condition" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="RegEx" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_matcher.py" />
+      <option name="CLASS_NAME" value="TestMatcher" />
+      <option name="METHOD_NAME" value="test_no_condition" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
@@ -473,18 +469,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.RegEx" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetests in TestMatcher" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_match_multiple" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_match_at_least_one" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_match_one_or_zero" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_any_multiple" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_match_at_least_one" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_match_one_or_zero" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_any_multiple" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_no_condition" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in TestMatcher" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_any_multiple" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_match_one_or_zero" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_match_at_least_one" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_match_multiple" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_no_condition" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_any_multiple" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_match_one_or_zero" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_match_at_least_one" />
       </list>
     </recent_temporary>
   </component>
@@ -502,34 +498,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nosetest_TestMatcher_test_any_multiple - 2015.12.19 at 22h 08m 01s.xml">
-      <configuration name="Nosetest TestMatcher.test_any_multiple" configurationId="tests" />
+    <history-entry file="Nosetest_TestMatcher_test_no_condition - 2015.12.19 at 22h 36m 50s.xml">
+      <configuration name="Nosetest TestMatcher.test_no_condition" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetest_TestMatcher_test_match_one_or_zero - 2015.12.19 at 21h 58m 11s.xml">
-      <configuration name="Nosetest TestMatcher.test_match_one_or_zero" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetest_TestMatcher_test_match_one_or_zero - 2015.12.19 at 21h 59m 48s.xml">
-      <configuration name="Nosetest TestMatcher.test_match_one_or_zero" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_TestMatcher - 2015.12.19 at 21h 55m 31s.xml">
-      <configuration name="Nosetests in TestMatcher" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_TestMatcher - 2015.12.19 at 22h 04m 11s.xml">
-      <configuration name="Nosetests in TestMatcher" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_TestMatcher - 2015.12.19 at 22h 13m 37s.xml">
-      <configuration name="Nosetests in TestMatcher" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_TestMatcher - 2015.12.19 at 22h 14m 52s.xml">
-      <configuration name="Nosetests in TestMatcher" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_TestMatcher - 2015.12.19 at 22h 16m 39s.xml">
-      <configuration name="Nosetests in TestMatcher" configurationId="tests" />
+    <history-entry file="Nosetest_TestMatcher_test_no_condition - 2015.12.19 at 22h 37m 11s.xml">
+      <configuration name="Nosetest TestMatcher.test_no_condition" configurationId="tests" />
     </history-entry>
     <history-entry file="Nosetests_in_TestMatcher - 2015.12.19 at 22h 18m 17s.xml">
       <configuration name="Nosetests in TestMatcher" configurationId="tests" />
     </history-entry>
     <history-entry file="Nosetests_in_TestMatcher - 2015.12.19 at 22h 19m 09s.xml">
+      <configuration name="Nosetests in TestMatcher" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_TestMatcher - 2015.12.19 at 22h 27m 44s.xml">
+      <configuration name="Nosetests in TestMatcher" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_TestMatcher - 2015.12.19 at 22h 28m 23s.xml">
+      <configuration name="Nosetests in TestMatcher" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_TestMatcher - 2015.12.19 at 22h 32m 41s.xml">
+      <configuration name="Nosetests in TestMatcher" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_TestMatcher - 2015.12.19 at 22h 33m 06s.xml">
+      <configuration name="Nosetests in TestMatcher" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_TestMatcher - 2015.12.19 at 22h 35m 26s.xml">
+      <configuration name="Nosetests in TestMatcher" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_TestMatcher - 2015.12.19 at 22h 37m 31s.xml">
       <configuration name="Nosetests in TestMatcher" configurationId="tests" />
     </history-entry>
   </component>
@@ -542,7 +538,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3279703" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3279703" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -569,7 +565,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="tests">
@@ -738,16 +734,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/matcher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.888889">
-          <caret line="83" column="59" selection-start-line="83" selection-start-column="59" selection-end-line="83" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_matcher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5532787">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.27663934">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
             <element signature="e#2584#3109#0" expanded="false" />
