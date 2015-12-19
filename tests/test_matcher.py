@@ -120,6 +120,24 @@ class TestMatcher(TestCase):
         result = matcher.match('alaala')
         self.assertEquals(result, {'length': 3})
 
+    def test_match(self):
+        matcher = Matcher({TOKEN: 'ala', MOD: None, COND: Evaluator.EVAL_CONDITION_MATCH})
+
+        result = matcher.match('alibaba')
+        self.assertEquals(result, None)
+
+        result = matcher.match('ala')
+        self.assertEquals(result, {'length': 3})
+
+        result = matcher.match('alaal')
+        self.assertEquals(result, {'length': 3})
+
+        result = matcher.match('alabama')
+        self.assertEquals(result, {'length': 3})
+
+        result = matcher.match('alaala')
+        self.assertEquals(result, {'length': 3})
+
 ##### condtion 'any' #####
 
     def test_any_multiple(self):
@@ -157,3 +175,15 @@ class TestMatcher(TestCase):
 
         result = matcher.match('kot')
         self.assertEquals(result, {'length': 0}) # infinite match
+
+    def test_any(self):
+        matcher = Matcher({TOKEN: 'liab', MOD: None, COND: Evaluator.EVAL_CONDITION_ANY})
+
+        result = matcher.match('alibaba')
+        self.assertEquals(result, {'length': 1})
+
+        result = matcher.match('lot')
+        self.assertEquals(result, {'length': 1})
+
+        result = matcher.match('kot')
+        self.assertEquals(result, None)

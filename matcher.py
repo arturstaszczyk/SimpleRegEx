@@ -29,7 +29,7 @@ class Matcher:
             elif modifier == '+':
                 return {Matcher.MATCH_LENGTH: cnt * token_len} if cnt > 0 else None
             else:
-                raise Exception('Invalid regex - used "()" agregation without modificator')
+                return {Matcher.MATCH_LENGTH: min(cnt, 1) * token_len} if cnt > 0 else None
 
         elif condition == Evaluator.EVAL_CONDITION_ANY:
             cnt = 0
@@ -43,7 +43,7 @@ class Matcher:
             elif modifier == '+':
                 return {Matcher.MATCH_LENGTH: cnt} if cnt > 0 else None
             else:
-                raise Exception('Invalid regex - used "[]" agregation without modificator')
+                return {Matcher.MATCH_LENGTH: min(cnt, 1)} if cnt > 0 else None
 
         else:
             cnt = 0
