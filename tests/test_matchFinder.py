@@ -7,7 +7,7 @@ from matchfinder import MatchFinder
 text = 'my awesome text'
 text_len = len(text)
 
-class TestRegExEngine(TestCase):
+class TestMatchFinder(TestCase):
 
     def setUp(self):
         self._matchFinder = MatchFinder()
