@@ -1,18 +1,31 @@
 from engine import Engine
+from tokenizer import Tokenizer
+from evaluator import Evaluator
+from matchfinder import MatchFinder
 
-e = Engine()
+
+e = Engine(Tokenizer(), Evaluator(), MatchFinder())
 
 result = e.find("alibaba", "[bali]+")
-print result
+print 'Match "alibaba" with "[bali]+"'
+print result + '\n'
 
 result = e.find("alibaba", "i(ba)+")
-print result
+print 'Match "alibaba" with "i(ba)+"'
+print result + '\n'
 
 result = e.find("alibaba", "(ba)+")
-print result
+print 'Match "alibaba" with "(ba)+"'
+print result + '\n'
 
 result = e.find("alibaba", "(ba)?")
-print result
+print 'Match "alibaba" with "(ba)?"'
+print result + '\n'
 
 result = e.find("libaba", "b*a+")
+print 'Match "libaba" with "b*a+"'
+print result + '\n'
+
+result = e.findAll("alibaba", "b*a+");
+print 'Match "alibaba" with "b*a+"'
 print result

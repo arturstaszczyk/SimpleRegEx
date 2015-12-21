@@ -14,8 +14,8 @@ class TestMatchFinder(TestCase):
 
     def test_find_first_with_two_matchers_at_begining(self):
 
-        mock_matcher1 = Mock();
-        mock_matcher2 = Mock();
+        mock_matcher1 = Mock()
+        mock_matcher2 = Mock()
         mock_matcher1.match.side_effect = [{Matcher.MATCH_LENGTH: 2}]
         mock_matcher2.match.side_effect = [{Matcher.MATCH_LENGTH: 3}]
 
@@ -26,8 +26,8 @@ class TestMatchFinder(TestCase):
 
     def test_find_first_with_two_matchers_no_begining(self):
 
-        mock_matcher1 = Mock();
-        mock_matcher2 = Mock();
+        mock_matcher1 = Mock()
+        mock_matcher2 = Mock()
 
         mock_matcher1.match.side_effect = [None, {Matcher.MATCH_LENGTH: 2}]
         mock_matcher2.match.side_effect = [{Matcher.MATCH_LENGTH: 3}]
@@ -38,8 +38,8 @@ class TestMatchFinder(TestCase):
         self.assertSequenceEqual(result, [1, 5])
 
     def test_find_first_with_two_matchers_fail_on_second(self):
-        mock_matcher1 = Mock();
-        mock_matcher2 = Mock();
+        mock_matcher1 = Mock()
+        mock_matcher2 = Mock()
 
         results1 = [{Matcher.MATCH_LENGTH: 2}] + ([None] * 100)
         mock_matcher1.match.side_effect = results1
@@ -51,8 +51,8 @@ class TestMatchFinder(TestCase):
         self.assertEquals(result, None)
 
     def test_find_first_with_two_matchers_end_of_text(self):
-        mock_matcher1 = Mock();
-        mock_matcher2 = Mock();
+        mock_matcher1 = Mock()
+        mock_matcher2 = Mock()
 
         results1 = ([None] * (text_len - 3)) + [{Matcher.MATCH_LENGTH: 2}]
         mock_matcher1.match.side_effect = results1
@@ -64,8 +64,8 @@ class TestMatchFinder(TestCase):
         self.assertEquals(result, [text_len - 3, text_len-1])
 
     def test_find_first_with_inifinite_match(self):
-        mock_matcher1 = Mock();
-        mock_matcher2 = Mock();
+        mock_matcher1 = Mock()
+        mock_matcher2 = Mock()
 
         results1 = ([None] * (text_len - 3)) + [{Matcher.MATCH_LENGTH: 2}]
         mock_matcher1.match.side_effect = results1
@@ -76,4 +76,14 @@ class TestMatchFinder(TestCase):
         result = self._matchFinder.findFirst(text)
         self.assertEquals(result, [text_len - 3, text_len-1])
 
+    def test_find_all_two_matchers(self):
+        mock_matcher1 = Mock()
+        mock_matcher2 = Mock()
 
+        mock_matcher1.match.side_effect = [{Matcher.MATCH_LENGTH: 2}, {Matcher.MATCH_LENGTH: 2}] + ([None] * 100)
+        mock_matcher2.match.side_effect = [{Matcher.MATCH_LENGTH: 1}, {Matcher.MATCH_LENGTH: 1}]
+
+        self._matchFinder.setMatchers([mock_matcher1, mock_matcher2])
+
+        result = self._matchFinder.findAll(text)
+        self.assertEquals(result, [[0, 2], [3, 5]])
