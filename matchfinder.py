@@ -1,4 +1,4 @@
-from matcher import Matcher
+from matchers.matcher import Matcher
 
 
 class MatchFinder:
@@ -24,7 +24,7 @@ class MatchFinder:
 
                 if match:
                     matchers_reported_ok += 1
-                    match_end_index += match[Matcher.MATCH_LENGTH]
+                    match_end_index += match['length']
                 else:
                     break
 

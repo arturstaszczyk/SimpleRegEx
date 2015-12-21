@@ -1,7 +1,4 @@
-from tokenizer import Tokenizer
-from evaluator import Evaluator
-from matcher import Matcher
-from matchfinder import MatchFinder
+from matchers.matcher import Matcher
 
 
 class Engine:
@@ -23,8 +20,14 @@ class Engine:
         self._match_finder.setMatchers(matchers)
         result = self._match_finder.findFirst(text)
 
-        print result
-        return text[result[0]:result[1] + 1] if result[1] >= 0 else "Infinite match"
+        ret_val = None
+        if result:
+            print result
+            ret_val = text[result[0]:result[1] + 1] if result[1] >= 0 else "Infinite match"
+        else:
+            ret_val = "No match"
+
+        return ret_val
 
     def findAll(self, text, regex):
         tokens = self._tokenizer.tokenize(regex)
@@ -38,8 +41,9 @@ class Engine:
         scopes = self._match_finder.findAll(text)
         result = []
 
-        print scopes
-        for scope in scopes:
-            result.append(text[scope[0]:scope[1] + 1])
+        if len(scopes) > 0:
+            print scopes
+            for scope in scopes:
+                result.append(text[scope[0]:scope[1] + 1])
 
         return result

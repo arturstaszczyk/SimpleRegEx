@@ -41,3 +41,7 @@ class TestTokenizer(TestCase):
     def test_tokenize_awesome_case_5(self):
         tokens = self._tokenizer.tokenize(".?(ab)[AB]a")
         self.assertSequenceEqual(tokens, ['.?', '(ab)', '[AB]', 'a'])
+
+    def test_tokenize_wildchar(self):
+        tokens = self._tokenizer.tokenize(".?(.a)+[ba]*.")
+        self.assertSequenceEqual(tokens, ['.?', '(.a)+', '[ba]*', '.'])

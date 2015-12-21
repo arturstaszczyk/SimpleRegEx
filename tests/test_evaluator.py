@@ -9,42 +9,49 @@ class TestEvaluator(TestCase):
 
     def test_evaluate_simple_tokens(self):
         tokens = ['a'] * 3
-        expected = [{'token': 'a', 'modifier': None, 'condition': None}] * 3
+        expected = [{'token': 'a', 'modifier': None, 'condition': None, 'has_wildchar': False}] * 3
 
-        output = evaluation = self._evaluator.evaluate(tokens)
+        output = self._evaluator.evaluate(tokens)
         self.assertSequenceEqual(output, expected)
 
     def test_evaluate_simple_tokens_modifier1(self):
         tokens = ['a+']
-        expected = [{'token': 'a', 'modifier': '+', 'condition': None}]
+        expected = [{'token': 'a', 'modifier': '+', 'condition': None, 'has_wildchar': False}]
 
-        output = evaluation = self._evaluator.evaluate(tokens)
+        output = self._evaluator.evaluate(tokens)
         self.assertSequenceEqual(output, expected)
 
     def test_evaluate_simple_tokens_modifier2(self):
         tokens = ['a*']
-        expected = [{'token': 'a', 'modifier': '*', 'condition': None}]
+        expected = [{'token': 'a', 'modifier': '*', 'condition': None, 'has_wildchar': False}]
 
-        output = evaluation = self._evaluator.evaluate(tokens)
+        output = self._evaluator.evaluate(tokens)
         self.assertSequenceEqual(output, expected)
 
     def test_evaluate_advanced_tokens_modifier1(self):
         tokens = ['[ab]+']
-        expected = [{'token': 'ab', 'modifier': '+', 'condition': 'any'}]
+        expected = [{'token': 'ab', 'modifier': '+', 'condition': 'any', 'has_wildchar': False}]
 
-        output = evaluation = self._evaluator.evaluate(tokens)
+        output = self._evaluator.evaluate(tokens)
         self.assertSequenceEqual(output, expected)
 
     def test_evaluate_advanced_tokens_modifier2(self):
         tokens = ['(ab)+']
-        expected = [{'token': 'ab', 'modifier': '+', 'condition': 'match'}]
+        expected = [{'token': 'ab', 'modifier': '+', 'condition': 'match', 'has_wildchar': False}]
 
-        output = evaluation = self._evaluator.evaluate(tokens)
+        output = self._evaluator.evaluate(tokens)
         self.assertSequenceEqual(output, expected)
 
     def test_evaluate_advanced_tokens_modifier3(self):
         tokens = ['(ab)']
-        expected = [{'token': 'ab', 'modifier': None, 'condition': 'match'}]
+        expected = [{'token': 'ab', 'modifier': None, 'condition': 'match', 'has_wildchar': False}]
 
-        output = evaluation = self._evaluator.evaluate(tokens)
+        output = self._evaluator.evaluate(tokens)
+        self.assertSequenceEqual(output, expected)
+
+    def test_evaluate_wildchar_token(self):
+        tokens = ['.']
+        expected = [{'token': '.', 'modifier': None, 'condition': None, 'has_wildchar': True}]
+
+        output = self._evaluator.evaluate(tokens)
         self.assertSequenceEqual(output, expected)

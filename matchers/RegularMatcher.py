@@ -1,9 +1,6 @@
 from evaluator import Evaluator
 
-
-class Matcher:
-
-    MATCH_LENGTH = 'length'
+class RegularMatcher:
 
     def __init__(self, token_eval):
         self._token_eval = token_eval
@@ -22,7 +19,7 @@ class Matcher:
                 text = text[token_len:]
 
             result = self._modify_result_by_modifier(cnt, modifier)
-            return {Matcher.MATCH_LENGTH: result * token_len} if result != None else None
+            return {'length': result * token_len} if result != None else None
 
         elif condition == Evaluator.EVAL_CONDITION_ANY:
             cnt = 0
@@ -30,7 +27,7 @@ class Matcher:
                 cnt = cnt + 1
 
             result = self._modify_result_by_modifier(cnt, modifier)
-            return {Matcher.MATCH_LENGTH: result} if result != None else None
+            return {'length': result} if result != None else None
 
         else:
             cnt = 0
@@ -38,7 +35,7 @@ class Matcher:
                 cnt = cnt + 1
 
             result = self._modify_result_by_modifier(cnt, modifier)
-            return {Matcher.MATCH_LENGTH: result} if result != None else None
+            return {'length': result} if result != None else None
 
     def _modify_result_by_modifier(self, result, modifier):
         if modifier == '*':
