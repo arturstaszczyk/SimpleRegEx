@@ -1,14 +1,14 @@
 from unittest import TestCase
 
 from evaluator import Evaluator
-from matchers.matcher import Matcher
+from matchers.regularmatcher import RegularMatcher
 
 TOKEN = Evaluator.EVAL_TOKEN
 MOD = Evaluator.EVAL_MODIFIER
 COND = Evaluator.EVAL_CONDITION
 
 def create_matcher(token_eval):
-    return Matcher.create_matcher(token_eval)
+    return RegularMatcher(token_eval)
 
 class TestMatcher(TestCase):
 
