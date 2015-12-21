@@ -6,58 +6,53 @@ class MatchFinder:
     def setMatchers(self, matchers):
         self._matchers = matchers
 
-    def findFirst(self, text):
+    def _all_matchers_reported_ok(self, matchers_count):
+        return matchers_count == len(self._matchers)
 
+    def _match_iterator(self, text):
         text_len = len(text)
-        text_begin_index = 0
-        text_check_index = text_begin_index
-        result = None
+        match_begin_index = 0
+        match_end_index = match_begin_index
 
-        while text_begin_index < text_len:
+        while match_begin_index < text_len:
 
+            # as a single matcher represents only a fragment of whole RegEx
+            # we need to iterate through all matchers
             matchers_reported_ok = 0
             for matcher in self._matchers:
-                match = matcher.match(text[text_check_index:])
+                match = matcher.match(text[match_end_index:])
+
                 if match:
                     matchers_reported_ok += 1
-                    text_check_index += match[Matcher.MATCH_LENGTH]
+                    match_end_index += match[Matcher.MATCH_LENGTH]
                 else:
                     break
 
-            if matchers_reported_ok == len(self._matchers):
-                result = [text_begin_index, text_check_index - 1]
-                return result
+            if self._all_matchers_reported_ok(matchers_reported_ok):
+                found_match = [match_begin_index, match_end_index - 1]
+                yield found_match
 
-            text_begin_index += 1
-            text_check_index = text_begin_index
+                match_begin_index = match_end_index
+                match_end_index = match_begin_index
+            else:
+                match_begin_index += 1
+                match_end_index = match_begin_index
 
-        return result
+
+    def findFirst(self, text):
+
+        try:
+            match = self._match_iterator(text).next()
+        except StopIteration:
+            match = None
+
+        return match
+
 
     def findAll(self, text):
 
-        text_len = len(text)
-        text_begin_index = 0
-        text_check_index = text_begin_index
         result = []
-
-        while text_begin_index < text_len:
-
-            matchers_reported_ok = 0
-            for matcher in self._matchers:
-                match = matcher.match(text[text_check_index:])
-                if match:
-                    matchers_reported_ok += 1
-                    text_check_index += match[Matcher.MATCH_LENGTH]
-                else:
-                    break
-
-            if matchers_reported_ok == len(self._matchers):
-                found_match = [text_begin_index, text_check_index - 1]
-                result.append(found_match)
-                text_begin_index = text_check_index
-                text_check_index = text_begin_index
-            else:
-                text_begin_index += 1
-                text_check_index = text_begin_index
+        for match in self._match_iterator(text):
+            result.append(match)
 
         return result
