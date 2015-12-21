@@ -1,4 +1,18 @@
-from tokenizer import Tokenizer
+from engine import Engine
 
-t = Tokenizer()
-t.tokenize("aaa?b[bb]+dd\"de\"*s")
+e = Engine()
+
+result = e.find("alibaba", "[bali]+")
+print result
+
+result = e.find("alibaba", "i(ba)+")
+print result
+
+result = e.find("alibaba", "(ba)+")
+print result
+
+result = e.find("alibaba", "(ba)?")
+print result
+
+result = e.find("libaba", "b*a+")
+print result

@@ -26,7 +26,6 @@ class Tokenizer:
         if buffer:
             tokens.append(buffer)
 
-        print(tokens)
         return tokens
 
     def _is_special(self, char):

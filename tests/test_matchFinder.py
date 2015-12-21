@@ -62,3 +62,18 @@ class TestMatchFinder(TestCase):
 
         result = self._matchFinder.findFirst(text)
         self.assertEquals(result, [text_len - 3, text_len-1])
+
+    def test_find_first_with_inifinite_match(self):
+        mock_matcher1 = Mock();
+        mock_matcher2 = Mock();
+
+        results1 = ([None] * (text_len - 3)) + [{Matcher.MATCH_LENGTH: 2}]
+        mock_matcher1.match.side_effect = results1
+        mock_matcher2.match.side_effect = [{Matcher.MATCH_LENGTH: 1}]
+
+        self._matchFinder.setMatchers([mock_matcher1, mock_matcher2])
+
+        result = self._matchFinder.findFirst(text)
+        self.assertEquals(result, [text_len - 3, text_len-1])
+
+
