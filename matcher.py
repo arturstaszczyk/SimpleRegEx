@@ -7,7 +7,6 @@ class Matcher:
 
     def __init__(self, token_eval):
         self._token_eval = token_eval
-        self._current_char = token_eval[Evaluator.EVAL_TOKEN]
 
     def match(self, text):
 
