@@ -38,4 +38,4 @@ class Evaluator:
             eval[Evaluator.EVAL_TOKEN] = eval[Evaluator.EVAL_TOKEN][1:-1]
             eval[Evaluator.EVAL_CONDITION] = Evaluator.EVAL_CONDITION_MATCH
 
-        return eval;
+        return eval

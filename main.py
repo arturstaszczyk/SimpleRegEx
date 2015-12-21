@@ -26,6 +26,6 @@ result = e.find("libaba", "b*a+")
 print 'Match "libaba" with "b*a+"'
 print result + '\n'
 
-result = e.findAll("alibaba", "b*a+");
+result = e.findAll("alibaba", "b*a+")
 print 'Match "alibaba" with "b*a+"'
 print result
