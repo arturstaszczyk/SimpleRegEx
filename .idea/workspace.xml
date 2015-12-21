@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="225cb60a-2d23-4361-ac0e-2ab359b2cfe1" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/test_regExEngine.py" afterPath="$PROJECT_DIR$/tests/test_matchFinder.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/matchfinder.py" afterPath="$PROJECT_DIR$/matchfinder.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_matchFinder.py" afterPath="$PROJECT_DIR$/tests/test_matchFinder.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_matcher.py" afterPath="$PROJECT_DIR$/tests/test_matcher.py" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/matchfinder.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+              <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -37,8 +38,8 @@
       <file leaf-file-name="test_matchFinder.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/test_matchFinder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21193093">
-              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.83516484">
+              <caret line="63" column="61" selection-start-line="63" selection-start-column="61" selection-end-line="63" selection-end-column="61" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -60,8 +61,8 @@
                 <element signature="e#1984#2535#0" expanded="false" />
                 <element signature="e#2584#3109#0" expanded="false" />
                 <element signature="e#3157#3703#0" expanded="false" />
-                <element signature="e#4336#4701#0" expanded="false" />
-                <element signature="e#4748#5087#0" expanded="false" />
+                <element signature="e#4992#5357#0" expanded="false" />
+                <element signature="e#5404#5743#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -101,12 +102,13 @@
         <option value="$PROJECT_DIR$/test_matcher.py" />
         <option value="$PROJECT_DIR$/evaluator.py" />
         <option value="$PROJECT_DIR$/tests/test_tokenizer.py" />
-        <option value="$PROJECT_DIR$/tests/test_matcher.py" />
         <option value="$PROJECT_DIR$/regexengine.py" />
         <option value="$PROJECT_DIR$/test_regExEngine.py" />
         <option value="$PROJECT_DIR$/matcher.py" />
-        <option value="$PROJECT_DIR$/matchfinder.py" />
         <option value="$PROJECT_DIR$/tests/test_regExEngine.py" />
+        <option value="$PROJECT_DIR$/tests/test_matcher.py" />
+        <option value="$PROJECT_DIR$/matchfinder.py" />
+        <option value="$PROJECT_DIR$/tests/test_matchFinder.py" />
       </list>
     </option>
   </component>
@@ -189,8 +191,8 @@
       <recent name="$PROJECT_DIR$/../untitled/tests" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="false" name="Nosetest TestMatchFinder.test_find_whole" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Nosetests in TestMatchFinder">
+    <configuration default="false" name="Nosetest TestMatchFinder.test_find_first_with_two_matchers_beyond_text" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -202,7 +204,7 @@
       <module name="RegEx" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_matchFinder.py" />
       <option name="CLASS_NAME" value="TestMatchFinder" />
-      <option name="METHOD_NAME" value="test_find_whole" />
+      <option name="METHOD_NAME" value="test_find_first_with_two_matchers_beyond_text" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
@@ -211,7 +213,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Nosetests in tests (2)" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Nosetest TestMatcher.test_match_beyond_text_multiple" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -221,11 +223,53 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="RegEx" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_matcher.py" />
+      <option name="CLASS_NAME" value="TestMatcher" />
+      <option name="METHOD_NAME" value="test_match_beyond_text_multiple" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Nosetest TestMatcher.test_match_beyond_text_at_least_one" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="RegEx" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_matcher.py" />
+      <option name="CLASS_NAME" value="TestMatcher" />
+      <option name="METHOD_NAME" value="test_match_beyond_text_at_least_one" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Nosetests in TestMatcher" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="RegEx" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_matcher.py" />
+      <option name="CLASS_NAME" value="TestMatcher" />
       <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="$PROJECT_DIR$/tests" />
-      <option name="TEST_TYPE" value="TEST_FOLDER" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_CLASS" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="PARAMS" value="" />
@@ -247,48 +291,6 @@
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_CLASS" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Nosetest TestMatchFinder.test_find_with_two_matchers" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="RegEx" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_matchFinder.py" />
-      <option name="CLASS_NAME" value="TestMatchFinder" />
-      <option name="METHOD_NAME" value="test_find_with_two_matchers" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Nosetest TestMatchFinder.test_find_first_with_two_matchers_no_begining" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="RegEx" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_matchFinder.py" />
-      <option name="CLASS_NAME" value="TestMatchFinder" />
-      <option name="METHOD_NAME" value="test_find_first_with_two_matchers_no_begining" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="PARAMS" value="" />
@@ -436,19 +438,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.RegEx" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatchFinder.test_find_whole" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests in tests (2)" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests in TestMatchFinder" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatchFinder.test_find_with_two_matchers" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatchFinder.test_find_first_with_two_matchers_no_begining" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatchFinder.test_find_first_with_two_matchers_beyond_text" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_match_beyond_text_multiple" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_match_beyond_text_at_least_one" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetests in TestMatcher" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Nosetests in TestMatchFinder" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in TestMatchFinder" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatchFinder.test_find_first_with_two_matchers_no_begining" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatchFinder.test_find_with_two_matchers" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatchFinder.test_find_whole" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetests in tests (2)" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatchFinder.test_find_first_with_two_matchers_beyond_text" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests in TestMatcher" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_match_beyond_text_at_least_one" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetest TestMatcher.test_match_beyond_text_multiple" />
       </list>
     </recent_temporary>
   </component>
@@ -466,35 +468,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nosetest_TestRegExEngine_test_find_first_with_two_matchers_no_begining - 2015.12.21 at 18h 16m 29s.xml">
-      <configuration name="Nosetest TestRegExEngine.test_find_first_with_two_matchers_no_begining" configurationId="tests" />
+    <history-entry file="Nosetest_TestMatchFinder_test_find_first_with_two_matchers_beyond_text - 2015.12.21 at 18h 27m 32s.xml">
+      <configuration name="Nosetest TestMatchFinder.test_find_first_with_two_matchers_beyond_text" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetest_TestRegExEngine_test_find_first_with_two_matchers_no_begining - 2015.12.21 at 18h 18m 20s.xml">
-      <configuration name="Nosetest TestRegExEngine.test_find_first_with_two_matchers_no_begining" configurationId="tests" />
+    <history-entry file="Nosetest_TestMatchFinder_test_find_first_with_two_matchers_beyond_text - 2015.12.21 at 18h 27m 48s.xml">
+      <configuration name="Nosetest TestMatchFinder.test_find_first_with_two_matchers_beyond_text" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetest_TestRegExEngine_test_find_first_with_two_matchers_no_begining - 2015.12.21 at 18h 18m 22s.xml">
-      <configuration name="Nosetest TestRegExEngine.test_find_first_with_two_matchers_no_begining" configurationId="tests" />
+    <history-entry file="Nosetest_TestMatchFinder_test_find_first_with_two_matchers_beyond_text - 2015.12.21 at 18h 32m 34s.xml">
+      <configuration name="Nosetest TestMatchFinder.test_find_first_with_two_matchers_beyond_text" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetest_TestRegExEngine_test_find_with_two_matchers - 2015.12.21 at 18h 07m 35s.xml">
-      <configuration name="Nosetest TestRegExEngine.test_find_with_two_matchers" configurationId="tests" />
+    <history-entry file="Nosetest_TestMatchFinder_test_find_first_with_two_matchers_beyond_text - 2015.12.21 at 18h 32m 47s.xml">
+      <configuration name="Nosetest TestMatchFinder.test_find_first_with_two_matchers_beyond_text" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetest_TestRegExEngine_test_find_with_two_matchers - 2015.12.21 at 18h 11m 57s.xml">
-      <configuration name="Nosetest TestRegExEngine.test_find_with_two_matchers" configurationId="tests" />
+    <history-entry file="Nosetest_TestMatcher_test_match_beyond_text - 2015.12.21 at 18h 30m 12s.xml">
+      <configuration name="Nosetest TestMatcher.test_match_beyond_text" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetest_TestRegExEngine_test_find_with_two_matchers - 2015.12.21 at 18h 12m 22s.xml">
-      <configuration name="Nosetest TestRegExEngine.test_find_with_two_matchers" configurationId="tests" />
+    <history-entry file="Nosetest_TestMatcher_test_match_beyond_text_at_least_one - 2015.12.21 at 18h 31m 35s.xml">
+      <configuration name="Nosetest TestMatcher.test_match_beyond_text_at_least_one" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_TestMatchFinder - 2015.12.21 at 18h 20m 17s.xml">
+    <history-entry file="Nosetest_TestMatcher_test_match_beyond_text_multiple - 2015.12.21 at 18h 31m 05s.xml">
+      <configuration name="Nosetest TestMatcher.test_match_beyond_text_multiple" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_TestMatchFinder - 2015.12.21 at 18h 34m 16s.xml">
       <configuration name="Nosetests in TestMatchFinder" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_TestRegExEngine - 2015.12.21 at 18h 12m 28s.xml">
-      <configuration name="Nosetests in TestRegExEngine" configurationId="tests" />
+    <history-entry file="Nosetests_in_TestMatchFinder - 2015.12.21 at 18h 35m 00s.xml">
+      <configuration name="Nosetests in TestMatchFinder" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_TestRegExEngine - 2015.12.21 at 18h 18m 27s.xml">
-      <configuration name="Nosetests in TestRegExEngine" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_TestRegExEngine - 2015.12.21 at 18h 19m 12s.xml">
-      <configuration name="Nosetests in TestRegExEngine" configurationId="tests" />
+    <history-entry file="Nosetests_in_TestMatcher - 2015.12.21 at 18h 31m 39s.xml">
+      <configuration name="Nosetests in TestMatcher" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -506,7 +508,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32692307" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32692307" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -533,7 +535,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -602,8 +604,8 @@
             <element signature="e#1984#2535#0" expanded="false" />
             <element signature="e#2584#3109#0" expanded="false" />
             <element signature="e#3157#3703#0" expanded="false" />
-            <element signature="e#4336#4701#0" expanded="false" />
-            <element signature="e#4748#5087#0" expanded="false" />
+            <element signature="e#4992#5357#0" expanded="false" />
+            <element signature="e#5404#5743#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -670,8 +672,8 @@
             <element signature="e#1984#2535#0" expanded="false" />
             <element signature="e#2584#3109#0" expanded="false" />
             <element signature="e#3157#3703#0" expanded="false" />
-            <element signature="e#4336#4701#0" expanded="false" />
-            <element signature="e#4748#5087#0" expanded="false" />
+            <element signature="e#4992#5357#0" expanded="false" />
+            <element signature="e#5404#5743#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -746,8 +748,8 @@
             <element signature="e#1984#2535#0" expanded="false" />
             <element signature="e#2584#3109#0" expanded="false" />
             <element signature="e#3157#3703#0" expanded="false" />
-            <element signature="e#4336#4701#0" expanded="false" />
-            <element signature="e#4748#5087#0" expanded="false" />
+            <element signature="e#4992#5357#0" expanded="false" />
+            <element signature="e#5404#5743#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -755,15 +757,15 @@
     <entry file="file://$PROJECT_DIR$/matchfinder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_matchFinder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21193093">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.83516484">
+          <caret line="63" column="61" selection-start-line="63" selection-start-column="61" selection-end-line="63" selection-end-column="61" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>

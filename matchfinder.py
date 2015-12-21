@@ -25,9 +25,10 @@ class MatchFinder:
                     break
 
             if matchers_reported_ok == len(self._matchers):
-                result = [text_begin_index, text_check_index]
+                result = [text_begin_index, text_check_index - 1]
                 return result
 
             text_begin_index += 1
             text_check_index = text_begin_index
 
+        return None

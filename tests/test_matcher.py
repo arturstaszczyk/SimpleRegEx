@@ -138,6 +138,24 @@ class TestMatcher(TestCase):
         result = matcher.match('alaala')
         self.assertEquals(result, {'length': 3})
 
+    def test_match_beyond_text(self):
+        matcher = Matcher({TOKEN: 'ala', MOD: None, COND: Evaluator.EVAL_CONDITION_MATCH})
+
+        result = matcher.match("Lal")
+        self.assertEquals(result, None)
+
+    def test_match_beyond_text_multiple(self):
+        matcher = Matcher({TOKEN: 'ala', MOD: '*', COND: Evaluator.EVAL_CONDITION_MATCH})
+
+        result = matcher.match("Lal")
+        self.assertEquals(result, {'length': 0})
+
+    def test_match_beyond_text_at_least_one(self):
+        matcher = Matcher({TOKEN: 'ala', MOD: '+', COND: Evaluator.EVAL_CONDITION_MATCH})
+
+        result = matcher.match("Lal")
+        self.assertEquals(result, None)
+
 ##### condtion 'any' #####
 
     def test_any_multiple(self):
