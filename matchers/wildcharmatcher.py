@@ -17,7 +17,7 @@ class WildcharMatcher(Matcher):
             raise BadCondition()
 
         if condition == Evaluator.EVAL_CONDITION_MATCH and modifier == None:
-            raise NoModifier();
+            raise NoModifier()
 
     def _match_normal(self, text, token):
         cnt = 0

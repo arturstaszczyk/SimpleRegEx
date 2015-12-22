@@ -9,9 +9,9 @@ class TestMatcherCreator(TestCase):
     def test_create_wildchar_matcher(self):
         matcher = MatcherCreator.create_matcher({'has_wildchar': True})
 
-        self.assertIsInstance(matcher, WildcharMatcher);
+        self.assertIsInstance(matcher, WildcharMatcher)
 
     def test_create_regular_matcher(self):
         matcher = MatcherCreator.create_matcher({'has_wildchar': False})
 
-        self.assertIsInstance(matcher, RegularMatcher);
+        self.assertIsInstance(matcher, RegularMatcher)

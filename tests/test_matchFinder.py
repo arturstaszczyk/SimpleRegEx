@@ -20,7 +20,7 @@ class TestMatchFinder(TestCase):
         self._matchFinder.setMatchers([mock_matcher1, mock_matcher2])
 
         result = self._matchFinder.findFirst(text)
-        self.assertSequenceEqual(result, [0, 4])
+        self.assertSequenceEqual(result, [0, 4]) # length = 5 (2+3), index 0 to 4
 
     def test_find_first_with_two_matchers_no_begining(self):
 

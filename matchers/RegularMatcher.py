@@ -13,7 +13,7 @@ class RegularMatcher(Matcher):
             raise BadMatcher()
 
         if condition == Evaluator.EVAL_CONDITION_MATCH and modifier == None:
-            raise NoModifier();
+            raise NoModifier()
 
     def _match_normal(self, text, token):
         cnt = 0

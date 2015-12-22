@@ -3,26 +3,26 @@ class Tokenizer:
     def tokenize(self, exp):
         tokens = []
         buffer = ""
-        end_element = None
+        closing_element = None
 
-        for x in exp:
+        for current_char in exp:
 
-            if self._is_special(x):
-                tokens[-1] += x # based on assumption of correct input
+            if self._is_special(current_char):
+                tokens[-1] += current_char # based on assumption of correct input
 
-            elif self._is_clustering(x):
-                end_element = ']' if x == '[' else ')'
-                buffer = buffer + x
+            elif self._is_clustering(current_char):
+                closing_element = ']' if current_char == '[' else ')'
+                buffer = buffer + current_char
 
             else:
-                if end_element != None:
-                    buffer = buffer + x
-                    if end_element == x:
+                if closing_element != None:
+                    buffer = buffer + current_char
+                    if closing_element == current_char:
                         tokens.append(buffer)
-                        end_element = None
+                        closing_element = None
                         buffer = ""
                 else:
-                    tokens.append(x)
+                    tokens.append(current_char)
         if buffer:
             tokens.append(buffer)
 
