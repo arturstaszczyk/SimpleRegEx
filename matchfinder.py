@@ -20,7 +20,7 @@ class MatchFinder:
             # we need to iterate through all matchers
             matchers_reported_ok = 0
             for matcher in self._matchers:
-                match = matcher.match(text[match_end_index:])
+                match = matcher.get_match_length(text[match_end_index:])
 
                 if match:
                     matchers_reported_ok += 1

@@ -14,8 +14,8 @@ class TestMatchFinder(TestCase):
 
         mock_matcher1 = Mock()
         mock_matcher2 = Mock()
-        mock_matcher1.match.side_effect = [{'length': 2}]
-        mock_matcher2.match.side_effect = [{'length': 3}]
+        mock_matcher1.get_match_length.side_effect = [{'length': 2}]
+        mock_matcher2.get_match_length.side_effect = [{'length': 3}]
 
         self._matchFinder.setMatchers([mock_matcher1, mock_matcher2])
 
@@ -27,8 +27,8 @@ class TestMatchFinder(TestCase):
         mock_matcher1 = Mock()
         mock_matcher2 = Mock()
 
-        mock_matcher1.match.side_effect = [None, {'length': 2}]
-        mock_matcher2.match.side_effect = [{'length': 3}]
+        mock_matcher1.get_match_length.side_effect = [None, {'length': 2}]
+        mock_matcher2.get_match_length.side_effect = [{'length': 3}]
 
         self._matchFinder.setMatchers([mock_matcher1, mock_matcher2])
 
@@ -40,8 +40,8 @@ class TestMatchFinder(TestCase):
         mock_matcher2 = Mock()
 
         results1 = [{'length': 2}] + ([None] * 100)
-        mock_matcher1.match.side_effect = results1
-        mock_matcher2.match.side_effect = [None]
+        mock_matcher1.get_match_length.side_effect = results1
+        mock_matcher2.get_match_length.side_effect = [None]
 
         self._matchFinder.setMatchers([mock_matcher1, mock_matcher2])
 
@@ -53,8 +53,8 @@ class TestMatchFinder(TestCase):
         mock_matcher2 = Mock()
 
         results1 = ([None] * (text_len - 3)) + [{'length': 2}]
-        mock_matcher1.match.side_effect = results1
-        mock_matcher2.match.side_effect = [{'length': 1}]
+        mock_matcher1.get_match_length.side_effect = results1
+        mock_matcher2.get_match_length.side_effect = [{'length': 1}]
 
         self._matchFinder.setMatchers([mock_matcher1, mock_matcher2])
 
@@ -66,8 +66,8 @@ class TestMatchFinder(TestCase):
         mock_matcher2 = Mock()
 
         results1 = ([None] * (text_len - 3)) + [{'length': 2}]
-        mock_matcher1.match.side_effect = results1
-        mock_matcher2.match.side_effect = [{'length': 1}]
+        mock_matcher1.get_match_length.side_effect = results1
+        mock_matcher2.get_match_length.side_effect = [{'length': 1}]
 
         self._matchFinder.setMatchers([mock_matcher1, mock_matcher2])
 
@@ -78,8 +78,8 @@ class TestMatchFinder(TestCase):
         mock_matcher1 = Mock()
         mock_matcher2 = Mock()
 
-        mock_matcher1.match.side_effect = [{'length': 2}, {'length': 2}] + ([None] * 100)
-        mock_matcher2.match.side_effect = [{'length': 1}, {'length': 1}]
+        mock_matcher1.get_match_length.side_effect = [{'length': 2}, {'length': 2}] + ([None] * 100)
+        mock_matcher2.get_match_length.side_effect = [{'length': 1}, {'length': 1}]
 
         self._matchFinder.setMatchers([mock_matcher1, mock_matcher2])
 

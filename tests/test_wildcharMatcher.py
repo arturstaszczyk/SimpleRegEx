@@ -14,40 +14,40 @@ class TestWildcharMatcher(TestCase):
 
     def test_no_wildchar(self):
         matcher = WildcharMatcher({TOKEN: '.a', COND: Evaluator.EVAL_CONDITION_ANY, MOD: '*', WILD: False})
-        self.assertRaises(BadMatcher, matcher.match, "text")
+        self.assertRaises(BadMatcher, matcher.get_match_length, "text")
 
     def test_bad_wildcahr_condition(self):
         matcher = WildcharMatcher({TOKEN: '.a', COND: Evaluator.EVAL_CONDITION_ANY, MOD: '*', WILD: True})
-        self.assertRaises(BadCondition, matcher.match, "text")
+        self.assertRaises(BadCondition, matcher.get_match_length, "text")
 
     def test_no_modifier(self):
         matcher = WildcharMatcher({TOKEN: '.a', COND: Evaluator.EVAL_CONDITION_MATCH, MOD: None, WILD: True})
-        self.assertRaises(NoModifier, matcher.match, "text")
+        self.assertRaises(NoModifier, matcher.get_match_length, "text")
 
 # condition = None
 
     def test_wildchar(self):
         matcher = WildcharMatcher({TOKEN: '.', COND: None, MOD: None, WILD: True})
 
-        output = matcher.match("text")
+        output = matcher.get_match_length("text")
         self.assertEquals(output, {"length": 1})
 
     def test_wildchar_multiply(self):
         matcher = WildcharMatcher({TOKEN: '.', COND: None, MOD: '*', WILD: True})
 
-        output = matcher.match("text")
+        output = matcher.get_match_length("text")
         self.assertEquals(output, {"length": 4})
 
     def test_wildchar_one_or_more(self):
         matcher = WildcharMatcher({TOKEN: '.', COND: None, MOD: '+', WILD: True})
 
-        output = matcher.match("text")
+        output = matcher.get_match_length("text")
         self.assertEquals(output, {"length": 4})
 
     def test_wildchar_one_or_zero(self):
         matcher = WildcharMatcher({TOKEN: '.', COND: None, MOD: '?', WILD: True})
 
-        output = matcher.match("text")
+        output = matcher.get_match_length("text")
         self.assertEquals(output, {"length": 1})
 
 # condition = Matxh
@@ -55,19 +55,19 @@ class TestWildcharMatcher(TestCase):
     def test_wildchar_match_multiply(self):
         matcher = WildcharMatcher({TOKEN: '.a', COND: Evaluator.EVAL_CONDITION_MATCH, MOD: '*', WILD: True})
 
-        output = matcher.match("taken")
+        output = matcher.get_match_length("taken")
         self.assertEquals(output, {"length": 2})
 
     def test_wildchar_match_more_than_one(self):
         matcher = WildcharMatcher({TOKEN: '.a', COND: Evaluator.EVAL_CONDITION_MATCH, MOD: '+', WILD: True})
 
-        output = matcher.match("tabaco")
+        output = matcher.get_match_length("tabaco")
         self.assertEquals(output, {"length": 4})
 
     def test_wildchar_match_one_or_zero(self):
         matcher = WildcharMatcher({TOKEN: '.a', COND: Evaluator.EVAL_CONDITION_MATCH, MOD: '?', WILD: True})
 
-        output = matcher.match("tabaco")
+        output = matcher.get_match_length("tabaco")
         self.assertEquals(output, {"length": 2})
 
     #special cases
@@ -75,5 +75,5 @@ class TestWildcharMatcher(TestCase):
     def test_special_case1(self):
         matcher = WildcharMatcher({TOKEN: 'a.', COND: Evaluator.EVAL_CONDITION_MATCH, MOD: '+', WILD: True})
 
-        output = matcher.match("alabama")
+        output = matcher.get_match_length("alabama")
         self.assertEquals(output, {"length": 6})

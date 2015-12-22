@@ -8,10 +8,7 @@ class WildcharMatcher(Matcher):
     def __init__(self, token_eval):
         self._token_eval = token_eval
 
-    def match(self, text):
-        token = self._token_eval[Evaluator.EVAL_TOKEN]
-        condition = self._token_eval[Evaluator.EVAL_CONDITION]
-        modifier = self._token_eval[Evaluator.EVAL_MODIFIER]
+    def _raise_exceptions(self, condition, modifier):
 
         if not self._token_eval[Evaluator.EVAL_WILDCHAR]:
             raise BadMatcher()
@@ -22,22 +19,23 @@ class WildcharMatcher(Matcher):
         if condition == Evaluator.EVAL_CONDITION_MATCH and modifier == None:
             raise NoModifier();
 
-        if condition == None:
-            cnt = 0
-            while cnt < len(text) and self._chars_wildequal_token(text[cnt], token[0]):
-                cnt = cnt + 1
-                result = self._modify_result_by_modifier(cnt, modifier)
-        elif condition == Evaluator.EVAL_CONDITION_MATCH:
-            cnt = 0
-            while cnt < len(text) and self._text_wildequal_token(text, token):
-                cnt = cnt + 1
-                text = text[len(token):]
+    def _match_normal(self, text, token):
+        cnt = 0
+        while cnt < len(text) and self._chars_wildequal_token(text[cnt], token[0]):
+            cnt = cnt + 1
 
-            result = self._modify_result_by_modifier(cnt, modifier) * len(token)
+        return cnt
 
-        return {Matcher.KEY_MATCH_LENGTH: result} if result != None else None
+    def _match_any(self, text, token):
+        raise NotImplemented("This method should not be called")
 
-        return None
+    def _match_match(self, text, token):
+        cnt = 0
+        while cnt < len(text) and self._text_wildequal_token(text, token):
+            cnt = cnt + 1
+            text = text[len(token):]
+
+        return cnt
 
     def _chars_wildequal_token(self, char1, token):
         return token == '.'
