@@ -1,6 +1,9 @@
 from evaluator import Evaluator
+from matcher import Matcher
+from regexexceptions import BadMatcher, NoModifier
 
-class RegularMatcher:
+
+class RegularMatcher(Matcher):
 
     def __init__(self, token_eval):
         self._token_eval = token_eval
@@ -11,6 +14,12 @@ class RegularMatcher:
         condition = self._token_eval[Evaluator.EVAL_CONDITION]
         modifier = self._token_eval[Evaluator.EVAL_MODIFIER]
 
+        if self._token_eval[Evaluator.EVAL_WILDCHAR]:
+            raise BadMatcher()
+
+        if condition == Evaluator.EVAL_CONDITION_MATCH and modifier == None:
+            raise NoModifier();
+
         if condition == Evaluator.EVAL_CONDITION_MATCH:
             cnt = 0
             token_len = len(token)
@@ -19,7 +28,7 @@ class RegularMatcher:
                 text = text[token_len:]
 
             result = self._modify_result_by_modifier(cnt, modifier)
-            return {'length': result * token_len} if result != None else None
+            return {Matcher.KEY_MATCH_LENGTH: result * token_len} if result != None else None
 
         elif condition == Evaluator.EVAL_CONDITION_ANY:
             cnt = 0
@@ -27,7 +36,7 @@ class RegularMatcher:
                 cnt = cnt + 1
 
             result = self._modify_result_by_modifier(cnt, modifier)
-            return {'length': result} if result != None else None
+            return {Matcher.KEY_MATCH_LENGTH: result} if result != None else None
 
         else:
             cnt = 0
@@ -35,14 +44,4 @@ class RegularMatcher:
                 cnt = cnt + 1
 
             result = self._modify_result_by_modifier(cnt, modifier)
-            return {'length': result} if result != None else None
-
-    def _modify_result_by_modifier(self, result, modifier):
-        if modifier == '*':
-            return result
-        elif modifier == '?':
-            return min(result, 1)
-        elif modifier == '+':
-            return result if result > 0 else None
-        else:
-            return min(result, 1) if result > 0 else None
+            return {Matcher.KEY_MATCH_LENGTH: result} if result != None else None

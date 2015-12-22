@@ -1,4 +1,4 @@
-from matchers.matcher import Matcher
+from matchers.matchercreator import MatcherCreator
 
 
 class Engine:
@@ -15,7 +15,7 @@ class Engine:
 
         matchers = []
         for single_eval in evals:
-            matchers.append(Matcher(single_eval))
+            matchers.append(MatcherCreator.create_matcher(single_eval))
 
         self._match_finder.setMatchers(matchers)
         result = self._match_finder.findFirst(text)
@@ -35,7 +35,7 @@ class Engine:
 
         matchers = []
         for single_eval in evals:
-            matchers.append(Matcher(single_eval))
+            matchers.append(MatcherCreator.create_matcher(single_eval))
 
         self._match_finder.setMatchers(matchers)
         scopes = self._match_finder.findAll(text)

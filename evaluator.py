@@ -44,7 +44,7 @@ class Evaluator:
         return eval
 
     def _evaluate_wildchar(self, eval):
-        if '.' in eval[Evaluator.EVAL_TOKEN]:
+        if '.' in eval[Evaluator.EVAL_TOKEN] and eval[Evaluator.EVAL_CONDITION] != Evaluator.EVAL_CONDITION_ANY:
             eval[Evaluator.EVAL_WILDCHAR] = True
         else:
             eval[Evaluator.EVAL_WILDCHAR] = False

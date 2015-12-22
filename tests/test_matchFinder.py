@@ -1,8 +1,5 @@
 from unittest import TestCase
-
 from mock import Mock
-
-from matchers.matcher import Matcher
 from matchfinder import MatchFinder
 
 text = 'my awesome text'

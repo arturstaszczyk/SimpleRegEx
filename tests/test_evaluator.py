@@ -55,3 +55,11 @@ class TestEvaluator(TestCase):
 
         output = self._evaluator.evaluate(tokens)
         self.assertSequenceEqual(output, expected)
+
+    def test_evaluate_wildchar_any_token(self):
+        tokens = ['[.a]+'] # in this case . should be evaluated as '.'
+        expected = [{'token': '.a', 'modifier': '+',
+                     'condition': Evaluator.EVAL_CONDITION_ANY, 'has_wildchar': False}]
+
+        output = self._evaluator.evaluate(tokens)
+        self.assertSequenceEqual(output, expected)

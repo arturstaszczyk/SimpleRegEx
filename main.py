@@ -6,6 +6,10 @@ from matchfinder import MatchFinder
 
 e = Engine(Tokenizer(), Evaluator(), MatchFinder())
 
+result = e.find("aaba", 'a')
+print 'Match "aaba" with "a"'
+print result + '\n'
+
 result = e.find("text", 'a')
 print 'Match "text" with "a"'
 print result + '\n'
@@ -39,6 +43,17 @@ print 'Match "alibaba" with "b*a+"'
 print result
 print '\n'
 
-result = e.findAll("alibaba", "a.a")
-print 'Match "alibaba" with "a.a"'
+result = e.findAll("alaibaba", "a.a")
+print 'Match "alaibaba" with "a.a"'
 print result
+print '\n'
+
+result = e.findAll("alabama", "[a.]+a")
+print 'Match "alabama" with "[a.]+a"'
+print result
+print '\n'
+
+result = e.findAll("alabama", "(a.)+a")
+print 'Match "alabama" with "(a.)+a"'
+print result
+print '\n'
