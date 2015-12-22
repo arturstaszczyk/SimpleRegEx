@@ -14,6 +14,7 @@ result = e.find("text", 'a')
 print 'Match "text" with "a"'
 print result + '\n'
 
+
 result = e.find("alibaba", "[bali]+")
 print 'Match "alibaba" with "[bali]+"'
 print result + '\n'
